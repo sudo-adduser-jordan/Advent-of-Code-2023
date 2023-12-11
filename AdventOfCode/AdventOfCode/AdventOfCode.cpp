@@ -1,10 +1,9 @@
 #include "pch.h"
 
 #include "../Utilities/Utilities.h"
-#include "PuzzleSolvers.h"
 #include "CodeGenerator.h"
 #include "Colors.h"
-
+#include "PuzzleSolvers.h"
 
 using namespace Utilities;
 
@@ -39,107 +38,106 @@ const std::vector<std::vector<std::filesystem::path>> puzzleInputPaths = {
 	{ "Puzzle21.input" }, { "Puzzle22.input" }, { "Puzzle23.input" }, { "Puzzle24.input" }, { "Puzzle25.input" },
 };
 
-const std::vector
-	<std::vector<std::vector<std::filesystem::path>>> puzzleSamplePaths = { { 
-																				{ "Puzzle01SampleA.input" },
-																				{ "Puzzle01SampleB.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle02SampleA.input" },
-																				{ "Puzzle02SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle03SampleA.input" },
-																				{ "Puzzle03SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle04SampleA.input" },
-																				{ "Puzzle04SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle05SampleA.input" },
-																				{ "Puzzle05SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle06SampleA.input" },
-																				{ "Puzzle06SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle07SampleA.input" },
-																				{ "Puzzle07SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle08SampleA.input" },
-																				{ "Puzzle08SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle09SampleA.input" },
-																				{ "Puzzle09SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle10SampleA.input" },
-																				{ "Puzzle10SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle11SampleA.input" },
-																				{ "Puzzle11SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle12SampleA.input" },
-																				{ "Puzzle12SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle13SampleA.input" },
-																				{ "Puzzle13SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle14SampleA.input" },
-																				{ "Puzzle14SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle15SampleA.input" },
-																				{ "Puzzle15SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle16SampleA.input" },
-																				{ "Puzzle16SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle17SampleA.input" },
-																				{ "Puzzle17SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle18SampleA.input" },
-																				{ "Puzzle18SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle19SampleA.input" },
-																				{ "Puzzle19SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle20SampleA.input" },
-																				{ "Puzzle20SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle21SampleA.input" },
-																				{ "Puzzle21SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle22SampleA.input" },
-																				{ "Puzzle22SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle23SampleA.input" },
-																				{ "Puzzle23SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle24SampleA.input" },
-																				{ "Puzzle24SampleA.input" },
-																			},
-	                                                                        {
-																				{ "Puzzle25SampleA.input" },
-																				{ "Puzzle25SampleA.input" },
-																			} };
+const std::vector<std::vector<std::vector<std::filesystem::path>>> puzzleSamplePaths = { {
+																							 { "Puzzle01SampleA.input" },
+																							 { "Puzzle01SampleB.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle02SampleA.input" },
+																							 { "Puzzle02SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle03SampleA.input" },
+																							 { "Puzzle03SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle04SampleA.input" },
+																							 { "Puzzle04SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle05SampleA.input" },
+																							 { "Puzzle05SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle06SampleA.input" },
+																							 { "Puzzle06SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle07SampleA.input" },
+																							 { "Puzzle07SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle08SampleA.input" },
+																							 { "Puzzle08SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle09SampleA.input" },
+																							 { "Puzzle09SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle10SampleA.input" },
+																							 { "Puzzle10SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle11SampleA.input" },
+																							 { "Puzzle11SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle12SampleA.input" },
+																							 { "Puzzle12SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle13SampleA.input" },
+																							 { "Puzzle13SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle14SampleA.input" },
+																							 { "Puzzle14SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle15SampleA.input" },
+																							 { "Puzzle15SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle16SampleA.input" },
+																							 { "Puzzle16SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle17SampleA.input" },
+																							 { "Puzzle17SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle18SampleA.input" },
+																							 { "Puzzle18SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle19SampleA.input" },
+																							 { "Puzzle19SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle20SampleA.input" },
+																							 { "Puzzle20SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle21SampleA.input" },
+																							 { "Puzzle21SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle22SampleA.input" },
+																							 { "Puzzle22SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle23SampleA.input" },
+																							 { "Puzzle23SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle24SampleA.input" },
+																							 { "Puzzle24SampleA.input" },
+																						 },
+	                                                                                     {
+																							 { "Puzzle25SampleA.input" },
+																							 { "Puzzle25SampleA.input" },
+																						 } };
 
 struct Args
 {
@@ -153,29 +151,33 @@ struct Args
 
 Args ReadArgs(int argc, char* argv[])
 {
+	{
+		std::cout << YELLOW_TEXT;
+		std::cout << " * ";
+		std::cout << RESET_COLOR;
+	}
+
+	std::string header = "Advent of Code";
+	for (int i = 0; i < header.size(); ++i)
+	{
+		if (i % 2 == 0)
 		{
-			std::cout << YELLOW_TEXT;
-			std::cout << " * ";
-			std::cout << RESET_COLOR;
+			std::cout << GREEN_TEXT;
 		}
 
-		std::string header = "Advent of Code";
-		for (int i = 0; i < header.size(); ++i)
+		if (i % 2 == 1)
 		{
-			if (i % 2 == 0)
-				std::cout << GREEN_TEXT;
-			
-			if (i % 2 == 1)
-					std::cout << RED_TEXT;
-			
-				std::cout << header[i];
+			std::cout << RED_TEXT;
 		}
 
-		{
-			std::cout << YELLOW_TEXT;
-			std::cout << " * ";
-			std::cout << " 2023\n\n";
-		}
+		std::cout << header[i];
+	}
+
+	{
+		std::cout << YELLOW_TEXT;
+		std::cout << " * ";
+		std::cout << " 2023\n\n";
+	}
 
 	Args result;
 	if (argc > 1)
@@ -247,11 +249,10 @@ Args ReadArgs(int argc, char* argv[])
 
 int main(int argc, char* argv[])
 {
-
-	//CodeGenerator::GeneratePuzzleSolversHeader();
-	//CodeGenerator::GeneratePuzzleSolvers();
-	//CodeGenerator::GeneratePuzzleInputFiles();
-	//CodeGenerator::GeneratePuzzleMarkDownFiles();
+	// CodeGenerator::GeneratePuzzleSolversHeader();
+	// CodeGenerator::GeneratePuzzleSolvers();
+	// CodeGenerator::GeneratePuzzleInputFiles();
+	// CodeGenerator::GeneratePuzzleMarkDownFiles();
 
 	Args args = ReadArgs(argc, argv);
 	if (args.puzzlesToRun.empty())
@@ -300,14 +301,14 @@ int main(int argc, char* argv[])
 				std::cout << " * ";
 				std::cout << RESET_COLOR;
 				std::cout << "Running puzzle ";
-				std::cout << CYAN_TEXT ;
+				std::cout << CYAN_TEXT;
 				std::cout << puzzleId;
 				std::cout << RESET_COLOR;
 				std::cout << ", part ";
 				std::cout << MAGENTA_TEXT;
 				std::cout << (i == 0 ? 'A' : 'B');
 				std::cout << RESET_COLOR;
-				std::cout << ":\n";
+				std::cout << ":\n\n";
 			}
 
 			std::vector<std::filesystem::path> inputPaths;
@@ -329,7 +330,7 @@ int main(int argc, char* argv[])
 					std::cout << CYAN_TEXT;
 					std::cout << inputPath;
 					std::cout << RESET_COLOR;
-					std::cout << ":\n";
+					std::cout << ":\n\n";
 				}
 
 				// Fully qualify the path to the input files, which have been copied next to the executable.

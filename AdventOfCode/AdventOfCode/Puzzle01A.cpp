@@ -16,10 +16,14 @@ namespace Puzzle01A
 		{
 			std::vector<char> digitVector;
 			for (const char character : line)
+			{
 				if (isdigit(character))
+				{
 					digitVector.push_back(character);
+				}
+			}
 
-            char firstNumber = digitVector[0];
+			char firstNumber = digitVector[0];
 			char lastNumber = digitVector[digitVector.size() - 1];
 			digitVector = {};
 
@@ -31,10 +35,11 @@ namespace Puzzle01A
 		}
 
 		for (int i : calibrationValues)
+		{
 			result += i;
+		}
 
 		SetConsoleTextColor(ConsoleForegroundColor::IntenseGreen);
 		std::cout << "\n\t\t" << result << std::endl;
-
 	}
 } // namespace Puzzle01A

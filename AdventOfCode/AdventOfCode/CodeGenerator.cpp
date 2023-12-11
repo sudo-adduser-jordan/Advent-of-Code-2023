@@ -1,5 +1,4 @@
 #include "CodeGenerator.h"
-
 #include "pch.h"
 
 #include "../Utilities/Utilities.h"
@@ -32,7 +31,6 @@ namespace CodeGenerator
 
 	void GeneratePuzzleSolvers()
 	{
-
 		// line # 8, 21, 23
 		// namespace Puzzle
 		//		std::cout << "Puzzle not yet solved!";
@@ -48,10 +46,13 @@ namespace CodeGenerator
 		std::string input;
 
 		while (std::getline(input_file, input))
+		{
 			lines.push_back(input);
+		}
 		input_file.close();
 
 		for (auto i = 1; i <= 25; i++)
+		{
 			for (auto j = 0; j < 2; ++j)
 			{
 				char part = (j == 0 ? 'A' : 'B');
@@ -71,8 +72,9 @@ namespace CodeGenerator
 				lines[25] = line26New;
 
 				Utilities::WriteAllLinesToFile(output_file, lines);
-				//std::cout << "File created.\n";
+				// std::cout << "File created.\n";
 			}
+		}
 	}
 
 	void GeneratePuzzleInputFiles()
