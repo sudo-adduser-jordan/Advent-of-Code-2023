@@ -93,4 +93,18 @@ namespace CodeGenerator
 			}
 		}
 	}
+	void GeneratePuzzleMarkDownFiles()
+	{
+		auto lines = std::vector<std::string>{ "" };
+		for (auto i = 1; i <= 25; ++i)
+		{
+			for (auto j = 0; j < 2; ++j)
+			{
+				char part = (j == 0 ? 'A' : 'B');
+				auto builder = std::stringstream{};
+				builder << "Puzzle" << std::setfill('0') << std::setw(2) << i << part << ".md";
+				Utilities::WriteAllLinesToFile(builder.str(), lines);
+			}
+		}
+	}
 } // namespace CodeGenerator

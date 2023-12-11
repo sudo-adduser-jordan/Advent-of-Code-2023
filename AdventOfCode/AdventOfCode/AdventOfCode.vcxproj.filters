@@ -356,12 +356,159 @@
     <Text Include="Puzzle01SampleB.input">
       <Filter>Input Samples</Filter>
     </Text>
-    <Text Include="Puzzle01A.md">
-      <Filter>Puzzles</Filter>
-    </Text>
   </ItemGroup>
   <ItemGroup>
     <None Include="AdventOfCode.args.json" />
     <None Include="packages.config" />
+    <None Include="Puzzle01A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle01B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle02A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle02B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle03A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle03B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle04A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle04B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle05A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle05B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle06A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle06B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle07A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle07B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle08A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle08B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle09A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle09B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle10A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle10B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle11A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle11B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle12A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle12B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle13A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle13B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle14A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle14B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle15A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle15B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle16A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle16B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle17A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle17B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle18A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle18B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle19A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle19B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle20A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle20B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle21A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle21B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle22A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle22B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle23A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle23B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle24A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle24B.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle25A.md">
+      <Filter>Puzzles</Filter>
+    </None>
+    <None Include="Puzzle25B.md">
+      <Filter>Puzzles</Filter>
+    </None>
   </ItemGroup>
 </Project>

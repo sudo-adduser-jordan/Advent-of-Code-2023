@@ -236,7 +236,6 @@
   <ItemGroup>
     <Text Include="PuzzleTemplate.txt" />
     <Text Include="Puzzle01SampleB.input" />
-    <Text Include="Puzzle01A.md" />
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="Puzzle01.input">
@@ -393,6 +392,56 @@
     <CopyFileToFolders Include="Puzzle25SampleA.input">
       <FileType>Document</FileType>
     </CopyFileToFolders>
+    <None Include="Puzzle01A.md" />
+    <None Include="Puzzle01B.md" />
+    <None Include="Puzzle02A.md" />
+    <None Include="Puzzle02B.md" />
+    <None Include="Puzzle03A.md" />
+    <None Include="Puzzle03B.md" />
+    <None Include="Puzzle04A.md" />
+    <None Include="Puzzle04B.md" />
+    <None Include="Puzzle05A.md" />
+    <None Include="Puzzle05B.md" />
+    <None Include="Puzzle06A.md" />
+    <None Include="Puzzle06B.md" />
+    <None Include="Puzzle07A.md" />
+    <None Include="Puzzle07B.md" />
+    <None Include="Puzzle08A.md" />
+    <None Include="Puzzle08B.md" />
+    <None Include="Puzzle09A.md" />
+    <None Include="Puzzle09B.md" />
+    <None Include="Puzzle10A.md" />
+    <None Include="Puzzle10B.md" />
+    <None Include="Puzzle11A.md" />
+    <None Include="Puzzle11B.md" />
+    <None Include="Puzzle12A.md" />
+    <None Include="Puzzle12B.md" />
+    <None Include="Puzzle13A.md" />
+    <None Include="Puzzle13B.md" />
+    <None Include="Puzzle14A.md" />
+    <None Include="Puzzle14B.md" />
+    <None Include="Puzzle15A.md" />
+    <None Include="Puzzle15B.md" />
+    <None Include="Puzzle16A.md" />
+    <None Include="Puzzle16B.md" />
+    <None Include="Puzzle17A.md" />
+    <None Include="Puzzle17B.md" />
+    <None Include="Puzzle18A.md" />
+    <None Include="Puzzle18B.md" />
+    <None Include="Puzzle19A.md" />
+    <None Include="Puzzle19B.md" />
+    <None Include="Puzzle20A.md" />
+    <None Include="Puzzle20B.md" />
+    <None Include="Puzzle21A.md" />
+    <None Include="Puzzle21B.md" />
+    <None Include="Puzzle22A.md" />
+    <None Include="Puzzle22B.md" />
+    <None Include="Puzzle23A.md" />
+    <None Include="Puzzle23B.md" />
+    <None Include="Puzzle24A.md" />
+    <None Include="Puzzle24B.md" />
+    <None Include="Puzzle25A.md" />
+    <None Include="Puzzle25B.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

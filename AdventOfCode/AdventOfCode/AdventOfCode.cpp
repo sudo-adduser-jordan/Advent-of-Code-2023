@@ -174,14 +174,17 @@ Args ReadArgs(int argc, char* argv[])
 		{
 			std::cout << YELLOW_TEXT;
 			std::cout << " * ";
-			std::cout << " 2023\n";
+			std::cout << " 2023\n\n";
 		}
 
 	Args result;
 	if (argc > 1)
 	{
 		{
-			std::cout << RESET_COLOR << std::endl;
+			std::cout << YELLOW_TEXT;
+			std::cout << " * ";
+			std::cout << RESET_COLOR;
+			std::cout << RESET_COLOR;
 			std::cout << "Command line arguments:\n";
 		}
 
@@ -222,7 +225,7 @@ Args ReadArgs(int argc, char* argv[])
 				std::cout << RED_TEXT;
 			}
 
-			std::cout << "    " << argv[i] << "\n";
+			std::cout << "    " << argv[i] << "\n\n";
 		}
 	}
 
@@ -248,6 +251,7 @@ int main(int argc, char* argv[])
 	//CodeGenerator::GeneratePuzzleSolversHeader();
 	//CodeGenerator::GeneratePuzzleSolvers();
 	//CodeGenerator::GeneratePuzzleInputFiles();
+	//CodeGenerator::GeneratePuzzleMarkDownFiles();
 
 	Args args = ReadArgs(argc, argv);
 	if (args.puzzlesToRun.empty())
@@ -331,6 +335,7 @@ int main(int argc, char* argv[])
 				// Fully qualify the path to the input files, which have been copied next to the executable.
 				static const std::filesystem::path executablePath = argv[0];
 				std::filesystem::path fullInputPath = executablePath.parent_path() / inputPath;
+
 				auto start = std::chrono::high_resolution_clock::now();
 				solver(fullInputPath, args.shouldRender);
 				auto stop = std::chrono::high_resolution_clock::now();

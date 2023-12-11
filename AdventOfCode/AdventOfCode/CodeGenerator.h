@@ -9,5 +9,8 @@ namespace CodeGenerator
 	void GeneratePuzzleSolvers();
 
 	// Generates empty Puzzle01.input - Puzzle25.input files.
-	void GeneratePuzzleInputFiles();
+	void GeneratePuzzleInputFiles(); 
+	
+	// Generates empty Puzzle01.md - Puzzle25.md files.
+	void GeneratePuzzleMarkDownFiles();
 }
