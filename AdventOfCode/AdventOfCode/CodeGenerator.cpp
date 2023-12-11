@@ -88,7 +88,7 @@ namespace CodeGenerator
 
 			{
 				auto builder = std::stringstream{};
-				builder << "Puzzle" << std::setfill('0') << std::setw(2) << i << "Sample.input";
+				builder << "Puzzle" << std::setfill('0') << std::setw(2) << i << "SampleA.input";
 				Utilities::WriteAllLinesToFile(builder.str(), lines);
 			}
 		}

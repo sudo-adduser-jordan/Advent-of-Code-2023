@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props')" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -228,65 +229,180 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CodeGenerator.h" />
+    <ClInclude Include="Colors.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="PuzzleSolvers.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="PuzzleTemplate.txt" />
+    <Text Include="Puzzle01SampleB.input" />
+    <Text Include="Puzzle01A.md" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Puzzle01.input" />
-    <None Include="Puzzle01Sample.input" />
-    <None Include="Puzzle02.input" />
-    <None Include="Puzzle02Sample.input" />
-    <None Include="Puzzle03.input" />
-    <None Include="Puzzle03Sample.input" />
-    <None Include="Puzzle04.input" />
-    <None Include="Puzzle04Sample.input" />
-    <None Include="Puzzle05.input" />
-    <None Include="Puzzle05Sample.input" />
-    <None Include="Puzzle06.input" />
-    <None Include="Puzzle06Sample.input" />
-    <None Include="Puzzle07.input" />
-    <None Include="Puzzle07Sample.input" />
-    <None Include="Puzzle08.input" />
-    <None Include="Puzzle08Sample.input" />
-    <None Include="Puzzle09.input" />
-    <None Include="Puzzle09Sample.input" />
-    <None Include="Puzzle10.input" />
-    <None Include="Puzzle10Sample.input" />
-    <None Include="Puzzle11.input" />
-    <None Include="Puzzle11Sample.input" />
-    <None Include="Puzzle12.input" />
-    <None Include="Puzzle12Sample.input" />
-    <None Include="Puzzle13.input" />
-    <None Include="Puzzle13Sample.input" />
-    <None Include="Puzzle14.input" />
-    <None Include="Puzzle14Sample.input" />
-    <None Include="Puzzle15.input" />
-    <None Include="Puzzle15Sample.input" />
-    <None Include="Puzzle16.input" />
-    <None Include="Puzzle16Sample.input" />
-    <None Include="Puzzle17.input" />
-    <None Include="Puzzle17Sample.input" />
-    <None Include="Puzzle18.input" />
-    <None Include="Puzzle18Sample.input" />
-    <None Include="Puzzle19.input" />
-    <None Include="Puzzle19Sample.input" />
-    <None Include="Puzzle20.input" />
-    <None Include="Puzzle20Sample.input" />
-    <None Include="Puzzle21.input" />
-    <None Include="Puzzle21Sample.input" />
-    <None Include="Puzzle22.input" />
-    <None Include="Puzzle22Sample.input" />
-    <None Include="Puzzle23.input" />
-    <None Include="Puzzle23Sample.input" />
-    <None Include="Puzzle24.input" />
-    <None Include="Puzzle24Sample.input" />
-    <None Include="Puzzle25.input" />
-    <None Include="Puzzle25Sample.input" />
+    <CopyFileToFolders Include="Puzzle01.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle02.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle03.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle04.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle05.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle06.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle07.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle08.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle09.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle10.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle11.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle12.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle13.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle14.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle15.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle16.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle17.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle18.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle19.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle20.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle21.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle22.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle23.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle24.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle25.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AdventOfCode.args.json" />
+    <None Include="packages.config" />
+    <CopyFileToFolders Include="Puzzle01SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle02SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle03SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle04SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle05SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle06SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle07SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle08SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle09SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle10SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle11SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle12SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle13SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle14SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle15SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle16SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle17SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle18SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle19SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle20SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle21SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle22SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle23SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle24SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Puzzle25SampleA.input">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+  </Target>
 </Project>

@@ -3,6 +3,7 @@
 #include "../Utilities/Utilities.h"
 #include "PuzzleSolvers.h"
 #include "CodeGenerator.h"
+#include "Colors.h"
 
 
 using namespace Utilities;
@@ -39,105 +40,105 @@ const std::vector<std::vector<std::filesystem::path>> puzzleInputPaths = {
 };
 
 const std::vector
-	<std::vector<std::vector<std::filesystem::path>>> puzzleSamplePaths = { {
-																				{ "Puzzle01Sample.input" },
-																				{ "Puzzle01Sample.input" },
+	<std::vector<std::vector<std::filesystem::path>>> puzzleSamplePaths = { { 
+																				{ "Puzzle01SampleA.input" },
+																				{ "Puzzle01SampleB.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle02Sample.input" },
-																				{ "Puzzle02Sample.input" },
+																				{ "Puzzle02SampleA.input" },
+																				{ "Puzzle02SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle03Sample.input" },
-																				{ "Puzzle03Sample.input" },
+																				{ "Puzzle03SampleA.input" },
+																				{ "Puzzle03SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle04Sample.input" },
-																				{ "Puzzle04Sample.input" },
+																				{ "Puzzle04SampleA.input" },
+																				{ "Puzzle04SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle05Sample.input" },
-																				{ "Puzzle05Sample.input" },
+																				{ "Puzzle05SampleA.input" },
+																				{ "Puzzle05SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle06Sample.input" },
-																				{ "Puzzle06Sample.input" },
+																				{ "Puzzle06SampleA.input" },
+																				{ "Puzzle06SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle07Sample.input" },
-																				{ "Puzzle07Sample.input" },
+																				{ "Puzzle07SampleA.input" },
+																				{ "Puzzle07SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle08Sample.input" },
-																				{ "Puzzle08SampleC.input" },
+																				{ "Puzzle08SampleA.input" },
+																				{ "Puzzle08SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle09Sample.input" },
-																				{ "Puzzle09Sample.input" },
+																				{ "Puzzle09SampleA.input" },
+																				{ "Puzzle09SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle10Sample.input" },
-																				{ "Puzzle10Sample.input" },
+																				{ "Puzzle10SampleA.input" },
+																				{ "Puzzle10SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle11Sample.input" },
-																				{ "Puzzle11Sample.input" },
+																				{ "Puzzle11SampleA.input" },
+																				{ "Puzzle11SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle12Sample.input" },
-																				{ "Puzzle12Sample.input" },
+																				{ "Puzzle12SampleA.input" },
+																				{ "Puzzle12SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle13Sample.input" },
-																				{ "Puzzle13Sample.input" },
+																				{ "Puzzle13SampleA.input" },
+																				{ "Puzzle13SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle14Sample.input" },
-																				{ "Puzzle14Sample.input" },
+																				{ "Puzzle14SampleA.input" },
+																				{ "Puzzle14SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle15Sample.input" },
-																				{ "Puzzle15Sample.input" },
+																				{ "Puzzle15SampleA.input" },
+																				{ "Puzzle15SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle16Sample.input" },
-																				{ "Puzzle16Sample.input" },
+																				{ "Puzzle16SampleA.input" },
+																				{ "Puzzle16SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle17Sample.input" },
-																				{ "Puzzle17Sample.input" },
+																				{ "Puzzle17SampleA.input" },
+																				{ "Puzzle17SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle18Sample.input" },
-																				{ "Puzzle18Sample.input" },
+																				{ "Puzzle18SampleA.input" },
+																				{ "Puzzle18SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle19Sample.input" },
-																				{ "Puzzle19Sample.input" },
+																				{ "Puzzle19SampleA.input" },
+																				{ "Puzzle19SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle20Sample.input" },
-																				{ "Puzzle20Sample.input" },
+																				{ "Puzzle20SampleA.input" },
+																				{ "Puzzle20SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle21Sample.input" },
-																				{ "Puzzle21Sample.input" },
+																				{ "Puzzle21SampleA.input" },
+																				{ "Puzzle21SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle22Sample.input" },
-																				{ "Puzzle22Sample.input" },
+																				{ "Puzzle22SampleA.input" },
+																				{ "Puzzle22SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle23Sample.input" },
-																				{ "Puzzle23Sample.input" },
+																				{ "Puzzle23SampleA.input" },
+																				{ "Puzzle23SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle24Sample.input" },
-																				{ "Puzzle24Sample.input" },
+																				{ "Puzzle24SampleA.input" },
+																				{ "Puzzle24SampleA.input" },
 																			},
 	                                                                        {
-																				{ "Puzzle25Sample.input" },
-																				{ "Puzzle25Sample.input" },
+																				{ "Puzzle25SampleA.input" },
+																				{ "Puzzle25SampleA.input" },
 																			} };
 
 struct Args
@@ -152,34 +153,44 @@ struct Args
 
 Args ReadArgs(int argc, char* argv[])
 {
-	ScopedConsoleTextColor textColor{ ConsoleForegroundColor::IntenseGreen };
-	{
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseYellow);
-		std::cout << " * ";
+		{
+			std::cout << YELLOW_TEXT;
+			std::cout << " * ";
+			std::cout << RESET_COLOR;
+		}
 
 		std::string header = "Advent of Code";
 		for (int i = 0; i < header.size(); ++i)
 		{
-			SetConsoleTextColor(i % 2 == 0 ? ConsoleForegroundColor::IntenseGreen : ConsoleForegroundColor::IntenseRed);
-			std::cout << header[i];
+			if (i % 2 == 0)
+				std::cout << GREEN_TEXT;
+			
+			if (i % 2 == 1)
+					std::cout << RED_TEXT;
+			
+				std::cout << header[i];
 		}
 
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseYellow);
-		std::cout << " * ";
-		std::cout << " 2023\n";
-	}
+		{
+			std::cout << YELLOW_TEXT;
+			std::cout << " * ";
+			std::cout << " 2023\n";
+		}
 
 	Args result;
 	if (argc > 1)
 	{
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseWhite);
-		std::cout << "Command line arguments:\n";
+		{
+			std::cout << RESET_COLOR << std::endl;
+			std::cout << "Command line arguments:\n";
+		}
+
 		for (int i = 1; i < argc; ++i)
 		{
 			std::string arg = argv[i];
 			if (validArgs.contains(arg))
 			{
-				SetConsoleTextColor(ConsoleForegroundColor::IntenseGreen);
+				std::cout << GREEN_TEXT << std::endl;
 
 				if (arg == "--sampleInput")
 				{
@@ -208,7 +219,7 @@ Args ReadArgs(int argc, char* argv[])
 			}
 			else
 			{
-				SetConsoleTextColor(ConsoleForegroundColor::IntenseRed);
+				std::cout << RED_TEXT;
 			}
 
 			std::cout << "    " << argv[i] << "\n";
@@ -241,27 +252,27 @@ int main(int argc, char* argv[])
 	Args args = ReadArgs(argc, argv);
 	if (args.puzzlesToRun.empty())
 	{
-		ScopedConsoleTextColor textColor{ ConsoleForegroundColor::IntenseRed };
+		std::cout << RED_TEXT;
 		std::cout << "\nNo puzzles specified for execution. Pass desired puzzles as command-line arguments. Sample usage:\n";
 
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseWhite);
+		std::cout << RESET_COLOR;
 		std::cout << "  AdventOfCode.exe ";
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseGreen);
+		std::cout << GREEN_TEXT;
 		std::cout << "--puzzle04\n";
 
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseWhite);
+		std::cout << RESET_COLOR;
 		std::cout << "  AdventOfCode.exe ";
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseGreen);
+		std::cout << GREEN_TEXT;
 		std::cout << "--render --puzzle01 --puzzle02\n";
 
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseWhite);
+		std::cout << RESET_COLOR;
 		std::cout << "  AdventOfCode.exe ";
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseGreen);
+		std::cout << GREEN_TEXT;
 		std::cout << "--partB --fullInput --puzzle02\n";
 
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseWhite);
+		std::cout << RESET_COLOR;
 		std::cout << "  AdventOfCode.exe ";
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseGreen);
+		std::cout << GREEN_TEXT;
 		std::cout << "--partA --sampleInput --puzzle03\n";
 	}
 
@@ -280,15 +291,18 @@ int main(int argc, char* argv[])
 			}
 
 			{
-				ScopedConsoleTextColor textColor{ ConsoleForegroundColor::IntenseWhite };
-				std::cout << "\nRunning puzzle ";
-				SetConsoleTextColor(ConsoleForegroundColor::IntenseCyan);
+				std::cout << RESET_COLOR;
+				std::cout << YELLOW_TEXT;
+				std::cout << " * ";
+				std::cout << RESET_COLOR;
+				std::cout << "Running puzzle ";
+				std::cout << CYAN_TEXT ;
 				std::cout << puzzleId;
-				SetConsoleTextColor(ConsoleForegroundColor::IntenseWhite);
+				std::cout << RESET_COLOR;
 				std::cout << ", part ";
-				SetConsoleTextColor(i == 0 ? ConsoleForegroundColor::IntenseGreen : ConsoleForegroundColor::IntenseRed);
+				std::cout << MAGENTA_TEXT;
 				std::cout << (i == 0 ? 'A' : 'B');
-				SetConsoleTextColor(ConsoleForegroundColor::IntenseWhite);
+				std::cout << RESET_COLOR;
 				std::cout << ":\n";
 			}
 
@@ -306,29 +320,28 @@ int main(int argc, char* argv[])
 			for (const auto& inputPath : inputPaths)
 			{
 				{
-					ScopedConsoleTextColor textColor{ ConsoleForegroundColor::IntenseWhite };
+					std::cout << RESET_COLOR;
 					std::cout << "\tUsing input file ";
-					SetConsoleTextColor(ConsoleForegroundColor::IntenseCyan);
+					std::cout << CYAN_TEXT;
 					std::cout << inputPath;
-					SetConsoleTextColor(ConsoleForegroundColor::IntenseWhite);
+					std::cout << RESET_COLOR;
 					std::cout << ":\n";
 				}
 
 				// Fully qualify the path to the input files, which have been copied next to the executable.
 				static const std::filesystem::path executablePath = argv[0];
 				std::filesystem::path fullInputPath = executablePath.parent_path() / inputPath;
-
 				auto start = std::chrono::high_resolution_clock::now();
 				solver(fullInputPath, args.shouldRender);
 				auto stop = std::chrono::high_resolution_clock::now();
 				auto durationMs = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
 
 				{
-					ScopedConsoleTextColor textColor{ ConsoleForegroundColor::IntenseWhite };
+					std::cout << RESET_COLOR << std::endl;
 					std::cout << "\n\tSolver executed in ";
-					SetConsoleTextColor(ConsoleForegroundColor::IntenseYellow);
+					std::cout << YELLOW_TEXT;
 					std::cout << durationMs.count() << " ms";
-					SetConsoleTextColor(ConsoleForegroundColor::IntenseWhite);
+					std::cout << RESET_COLOR << std::endl;
 					std::cout << ".\n\n";
 				}
 			}
