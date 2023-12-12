@@ -348,7 +348,7 @@ int main(int argc, char* argv[])
 					std::cout << YELLOW_TEXT;
 					std::cout << durationMs.count() << " ms";
 					std::cout << RESET_COLOR << std::endl;
-					std::cout << ".\n\n";
+					std::cout << "\n\n";
 				}
 			}
 		}
