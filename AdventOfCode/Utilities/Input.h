@@ -1,6 +1,6 @@
 #pragma once
+#include "pch.h"
 
-#include "Grid2d.h"
 
 namespace Utilities
 {
@@ -8,7 +8,7 @@ namespace Utilities
 	std::vector<std::string> ReadAllLinesInFile(const std::filesystem::path& path);
 
 	// Reads the provided text file and returns a 2d grid of characters
-	Grid2d<char> ReadAllLinesInFileAsGrid(const std::filesystem::path& path);
+	// Grid2d<char> ReadAllLinesInFileAsGrid(const std::filesystem::path& path);
 
 	// Writes the provided lines to the specified text file, overwriting if it exists.
 	bool WriteAllLinesToFile(const std::filesystem::path& path, const std::vector<std::string>& lines);
@@ -72,11 +72,13 @@ namespace Utilities
 	// Parses the input string into tokens separated by the provided delimiter and applies the supplied
 	// transform to each token.
 	template<typename T>
-	std::vector<T> SplitStringAndTransform(
-		std::string_view input, std::string_view delimiter, std::function<T(std::string_view)> transform)
+	std::vector<T> SplitStringAndTransform(std::string_view input, std::string_view delimiter, std::function<T(std::string_view)> transform)
 	{
 		return std::views::split(input, delimiter)
-			| std::views::transform([&transform](const auto& subrange){ return transform(std::string_view{ subrange.begin(), subrange.end() }); })
-			| std::ranges::to<std::vector>();
+		     | std::views::transform(
+				   [&transform](const auto& subrange) {
+					   return transform(std::string_view{ subrange.begin(), subrange.end() });
+				   })
+		     | std::ranges::to<std::vector>();
 	}
-}
+} // namespace Utilities

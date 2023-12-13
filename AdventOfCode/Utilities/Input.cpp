@@ -22,27 +22,27 @@ namespace Utilities
 		return lines;
 	}
 
-	Grid2d<char> ReadAllLinesInFileAsGrid(const std::filesystem::path& path)
-	{
-		auto lines = ReadAllLinesInFile(path);
-		VerifyElseCrash(lines.size() >= 1);
+	//Grid2d<char> ReadAllLinesInFileAsGrid(const std::filesystem::path& path)
+	//{
+	//	auto lines = ReadAllLinesInFile(path);
+	//	VerifyElseCrash(lines.size() >= 1);
 
-		int width = static_cast<int>(lines[0].size());
-		int height = static_cast<int>(lines.size());
-		auto grid = Grid2d<char>{ width, height };
+	//	int width = static_cast<int>(lines[0].size());
+	//	int height = static_cast<int>(lines.size());
+	//	auto grid = Grid2d<char>{ width, height };
 
-		for (int y = 0; y < grid.Height(); ++y)
-		{
-			const auto& line = lines[y];
-			VerifyElseCrash(line.size() == width);
-			for (int x = 0; x < grid.Width(); ++x)
-			{
-				grid.at(x, y) = line[x];
-			}
-		}
+	//	for (int y = 0; y < grid.Height(); ++y)
+	//	{
+	//		const auto& line = lines[y];
+	//		VerifyElseCrash(line.size() == width);
+	//		for (int x = 0; x < grid.Width(); ++x)
+	//		{
+	//			grid.at(x, y) = line[x];
+	//		}
+	//	}
 
-		return grid;
-	}
+	//	return grid;
+	//}
 
 	bool WriteAllLinesToFile(const std::filesystem::path& path, const std::vector<std::string>& lines)
 	{

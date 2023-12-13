@@ -15,11 +15,11 @@
     <Filter Include="Input Samples">
       <UniqueIdentifier>{8bcf9993-d9c1-4433-9aa5-3ec5bfa5b876}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Solutions">
-      <UniqueIdentifier>{83784941-91ba-4853-8f46-9b04802efc65}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Puzzles">
       <UniqueIdentifier>{bdc54467-bcc9-45a8-8745-77a733f9fdc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solutions">
+      <UniqueIdentifier>{d09c8e12-2618-4e96-b89e-4c352463e228}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

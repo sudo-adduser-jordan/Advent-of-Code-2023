@@ -159,24 +159,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Assertions.h" />
-    <ClInclude Include="Console.h" />
-    <ClInclude Include="Grid2d.h" />
-    <ClInclude Include="Grid3d.h" />
-    <ClInclude Include="Hashing.h" />
+    <ClInclude Include="Colors.h" />
+    <ClInclude Include="File.h" />
     <ClInclude Include="Input.h" />
-    <ClInclude Include="OffsetGrid2d.h" />
-    <ClInclude Include="OffsetGrid3d.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="stdc++.h" />
+    <ClInclude Include="String.h" />
     <ClInclude Include="Utilities.h" />
-    <ClInclude Include="Vector2d.h" />
-    <ClInclude Include="Vector3d.h" />
-    <ClInclude Include="Vector4d.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Assertions.cpp" />
-    <ClCompile Include="Console.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -184,6 +175,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Input.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="String.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

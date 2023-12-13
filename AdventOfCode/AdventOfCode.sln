@@ -7,8 +7,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AdventOfCode", "AdventOfCod
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utilities", "Utilities\Utilities.vcxproj", "{033E1DB9-1E47-4278-B5DB-3A12288DA826}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UtilitiesTest", "UtilitiesTest\UtilitiesTest.vcxproj", "{A02ADC44-75C4-4FCF-B5AC-80CFCBD9ABD8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,10 +21,6 @@ Global
 		{033E1DB9-1E47-4278-B5DB-3A12288DA826}.Debug|x64.Build.0 = Debug|x64
 		{033E1DB9-1E47-4278-B5DB-3A12288DA826}.Release|x64.ActiveCfg = Release|x64
 		{033E1DB9-1E47-4278-B5DB-3A12288DA826}.Release|x64.Build.0 = Release|x64
-		{A02ADC44-75C4-4FCF-B5AC-80CFCBD9ABD8}.Debug|x64.ActiveCfg = Debug|x64
-		{A02ADC44-75C4-4FCF-B5AC-80CFCBD9ABD8}.Debug|x64.Build.0 = Debug|x64
-		{A02ADC44-75C4-4FCF-B5AC-80CFCBD9ABD8}.Release|x64.ActiveCfg = Release|x64
-		{A02ADC44-75C4-4FCF-B5AC-80CFCBD9ABD8}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

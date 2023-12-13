@@ -31,15 +31,15 @@ namespace CodeGenerator
 
 	void GeneratePuzzleSolvers()
 	{
-		// line # 8, 21, 23
+		// line # 9, 15, 17
 		// namespace Puzzle
 		//		std::cout << "Puzzle not yet solved!";
 		// } // namespace Puzzle
 
-		std::string line8 = "namespace Puzzle";
-		std::string line22a = R"(		std::cout << "\t\tPuzzle)";
-		std::string line22b = R"( not yet solved !";)";
-		std::string line26 = "} // namespace Puzzle";
+		std::string line9 = "namespace Puzzle";
+		std::string line15a = R"(		std::cout << "\t\tPuzzle)";
+		std::string line15b = R"( not yet solved !";)";
+		std::string line17 = "} // namespace Puzzle";
 
 		std::ifstream input_file("PuzzleTemplate.txt");
 		std::vector<std::string> lines;
@@ -51,7 +51,7 @@ namespace CodeGenerator
 		}
 		input_file.close();
 
-		for (auto i = 1; i <= 25; i++)
+		for (auto i = 6; i <= 25; i++)
 		{
 			for (auto j = 0; j < 2; ++j)
 			{
@@ -59,17 +59,17 @@ namespace CodeGenerator
 				std::string day = (i < 10 ? '0' + std::to_string(i) : std::to_string(i));
 				std::string output_file = "Puzzle" + day + part + ".cpp";
 
-				std::string line8New = line8;
-				std::string line22New = line22a;
-				std::string line26New = line26;
+				std::string line9New = line9;
+				std::string line22New = line15a;
+				std::string line17New = line17;
 
-				line8New += day + part;
-				line22New += day + part + line22b;
-				line26New += day + part;
+				line9New += day + part;
+				line22New += day + part + line15b;
+				line17New += day + part;
 
-				lines[7] = line8New;
-				lines[21] = line22New;
-				lines[25] = line26New;
+				lines[8] = line9New;
+				lines[14] = line22New;
+				lines[16] = line17New;
 
 				Utilities::WriteAllLinesToFile(output_file, lines);
 				// std::cout << "File created.\n";
@@ -95,6 +95,7 @@ namespace CodeGenerator
 			}
 		}
 	}
+
 	void GeneratePuzzleMarkDownFiles()
 	{
 		auto lines = std::vector<std::string>{ "" };

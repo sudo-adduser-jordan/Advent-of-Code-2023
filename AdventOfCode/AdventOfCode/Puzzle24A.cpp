@@ -2,25 +2,16 @@
 
 #include "../Utilities/Utilities.h"
 #include "PuzzleSolvers.h"
+#include "Colors.h"
 
 using namespace Utilities;
 
 namespace Puzzle24A
 {
-	auto ReadInput(const std::filesystem::path& inputFile)
+	void PrintSolution(const std::filesystem::path& inputFile, bool shouldRender)
 	{
 		auto input = ReadAllLinesInFile(inputFile);
 
-		return input;
-	}
-
-	void PrintSolution(const std::filesystem::path& inputFile, bool shouldRender)
-	{
-		auto input = ReadInput(inputFile);
-
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseYellow);
 		std::cout << "\t\tPuzzle24A not yet solved !";
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseWhite);
-
 	}
 } // namespace Puzzle24A

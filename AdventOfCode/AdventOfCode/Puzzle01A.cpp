@@ -39,7 +39,6 @@ namespace Puzzle01A
 			result += i;
 		}
 
-		SetConsoleTextColor(ConsoleForegroundColor::IntenseGreen);
 		std::cout << "\n\t\t" << result << std::endl;
 	}
 } // namespace Puzzle01A
