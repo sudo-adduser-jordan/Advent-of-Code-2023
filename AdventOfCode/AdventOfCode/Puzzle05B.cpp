@@ -196,7 +196,7 @@ namespace Puzzle05B
 		}
 		fullMap.transform(seedRanges);
 
-		ulint result = ranges::min(ranges::views::all(seedRanges) | std::views::transform([](auto& range) { return range.start; }));
+		ulint result = std::ranges::min(std::ranges::views::all(seedRanges) | std::views::transform([](auto& range) { return range.start; }));
 
 		std::cout << "\t\t" << GREEN_TEXT << result << RESET_COLOR;
 	}

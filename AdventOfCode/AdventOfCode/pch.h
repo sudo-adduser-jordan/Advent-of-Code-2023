@@ -9,7 +9,7 @@
 
 // add headers that you want to pre-compile here
 #include "..\Utilities\stdc++.h"
-#include <range/v3/all.hpp>
-#include <scn/all.h>
+//#include <range/v3/all.hpp>
+//#include <scn/all.h>
 
 #endif //PCH_H
