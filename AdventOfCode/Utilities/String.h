@@ -22,7 +22,4 @@ namespace Utilities
 	 **/
 	bool isFound(const std::string& match, const std::string& str);
 
-	// todo
-	static std::vector<std::string> split_string_by_delimiter(std::string s, const std::string& delimiter);
-
 } // namespace Utilities
