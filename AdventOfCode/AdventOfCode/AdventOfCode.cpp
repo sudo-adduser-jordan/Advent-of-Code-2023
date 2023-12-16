@@ -305,6 +305,7 @@ int main(int argc, char* argv[])
 				std::cout << puzzleId;
 				std::cout << RESET_COLOR;
 				std::cout << ", part ";
+
 				std::cout << MAGENTA_TEXT;
 				std::cout << (i == 0 ? 'A' : 'B');
 				std::cout << RESET_COLOR;
