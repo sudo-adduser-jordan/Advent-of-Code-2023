@@ -258,26 +258,27 @@ int main(int argc, char* argv[])
 	{
 		std::cout << RED_TEXT;
 		std::cout << "\nNo puzzles specified for execution. Pass desired puzzles as command-line arguments. Sample usage:\n";
-
 		std::cout << RESET_COLOR;
+
 		std::cout << "  AdventOfCode.exe ";
 		std::cout << GREEN_TEXT;
 		std::cout << "--puzzle04\n";
-
 		std::cout << RESET_COLOR;
+
 		std::cout << "  AdventOfCode.exe ";
 		std::cout << GREEN_TEXT;
 		std::cout << "--render --puzzle01 --puzzle02\n";
-
 		std::cout << RESET_COLOR;
+
 		std::cout << "  AdventOfCode.exe ";
 		std::cout << GREEN_TEXT;
 		std::cout << "--partB --fullInput --puzzle02\n";
-
 		std::cout << RESET_COLOR;
+
 		std::cout << "  AdventOfCode.exe ";
 		std::cout << GREEN_TEXT;
 		std::cout << "--partA --sampleInput --puzzle03\n";
+		std::cout << RESET_COLOR;
 	}
 
 	for (int puzzleId : args.puzzlesToRun)
