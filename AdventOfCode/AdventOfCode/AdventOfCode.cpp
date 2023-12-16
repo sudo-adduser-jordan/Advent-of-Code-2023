@@ -186,7 +186,6 @@ Args ReadArgs(int argc, char* argv[])
 			std::cout << YELLOW_TEXT;
 			std::cout << " * ";
 			std::cout << RESET_COLOR;
-			std::cout << RESET_COLOR;
 			std::cout << "Command line arguments:\n";
 		}
 
