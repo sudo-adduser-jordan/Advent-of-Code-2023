@@ -83,7 +83,6 @@ namespace Puzzle08B
 					{
 						auto cmp = [startingNode](Node node) { return startingNode.left == node.name; };
 						auto it = std::find_if(nodes.begin(), nodes.end(), cmp);
-
 						if (it != nodes.end())
 						{
 							startingNode = *it;

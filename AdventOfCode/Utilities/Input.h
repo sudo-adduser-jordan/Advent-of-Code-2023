@@ -1,7 +1,6 @@
 #pragma once
 #include "pch.h"
 
-
 namespace Utilities
 {
 	// Reads the provided text file and returns all lines as strings.

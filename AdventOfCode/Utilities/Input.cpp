@@ -22,7 +22,7 @@ namespace Utilities
 		return lines;
 	}
 
-	//Grid2d<char> ReadAllLinesInFileAsGrid(const std::filesystem::path& path)
+	// Grid2d<char> ReadAllLinesInFileAsGrid(const std::filesystem::path& path)
 	//{
 	//	auto lines = ReadAllLinesInFile(path);
 	//	VerifyElseCrash(lines.size() >= 1);
