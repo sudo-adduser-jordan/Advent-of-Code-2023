@@ -10,7 +10,7 @@ namespace Puzzle09A
 {
 	void PrintSolution(const std::filesystem::path& inputFile, bool shouldRender)
 	{
-		auto input = ReadAllLinesInFile(inputFile);
+		auto input = file_into_string_vector(inputFile);
 		auto grid = file_into_int_grid(inputFile);
 
 		std::vector<int> predictions;

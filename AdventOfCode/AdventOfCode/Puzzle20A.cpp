@@ -10,7 +10,7 @@ namespace Puzzle20A
 {
 	void PrintSolution(const std::filesystem::path& inputFile, bool shouldRender)
 	{
-		auto input = ReadAllLinesInFile(inputFile);
+		auto input = file_into_string_vector(inputFile);
 
 		std::cout << "\t\tPuzzle20A not yet solved !";
 	}

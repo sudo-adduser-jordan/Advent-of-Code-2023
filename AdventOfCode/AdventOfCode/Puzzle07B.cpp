@@ -138,9 +138,9 @@ namespace Puzzle07B
 	{
 		// Read hands and bids
 		std::vector<Hand> hands;
-		for (const std::string& line : ReadAllLinesInFile(inputFile))
+		for (const std::string& line : file_into_string_vector(inputFile))
 		{
-			std::vector<std::string> split = SplitString(line, " ");
+			std::vector<std::string> split = string_split(line, ' ');
 			hands.emplace_back(split[0], std::stoi(split[1]), GetHandType(split[0]));
 		}
 

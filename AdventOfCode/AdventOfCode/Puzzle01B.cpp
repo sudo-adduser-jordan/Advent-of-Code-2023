@@ -12,7 +12,7 @@ namespace Puzzle01B
 		int result = 0;
 		std::vector<int> calibrationValues;
 
-		for (const std::string& line : ReadAllLinesInFile(inputFile))
+		for (const std::string& line : file_into_string_vector(inputFile))
 		{
 			std::vector<char> digitVector;
 			std::string str = "";

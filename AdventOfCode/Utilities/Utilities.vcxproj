@@ -161,7 +161,6 @@
   <ItemGroup>
     <ClInclude Include="Colors.h" />
     <ClInclude Include="File.h" />
-    <ClInclude Include="Input.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="stdc++.h" />
     <ClInclude Include="String.h" />
@@ -174,7 +173,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Input.cpp" />
     <ClCompile Include="File.cpp" />
     <ClCompile Include="String.cpp" />
   </ItemGroup>

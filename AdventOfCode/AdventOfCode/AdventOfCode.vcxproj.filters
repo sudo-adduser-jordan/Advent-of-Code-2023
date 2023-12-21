@@ -358,7 +358,6 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <None Include="AdventOfCode.args.json" />
     <None Include="packages.config" />
     <None Include="Puzzle01A.md">
       <Filter>Puzzles</Filter>

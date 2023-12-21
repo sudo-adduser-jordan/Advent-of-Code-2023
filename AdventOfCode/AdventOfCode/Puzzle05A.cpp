@@ -27,7 +27,7 @@ namespace Puzzle05A
 	{
 		// Initialize variables.
 		ulint result = 0;                                                                               // End result.
-		auto input = ReadAllLinesInFile(inputFile);                                                     // File input.
+		auto input = file_into_string_vector(inputFile);                                                     // File input.
 		std::vector<ulint> seeds = string_to_long_long_vector(input[0].substr(input[0].find(':') + 1)); // List of seeds.
 		std::list<std::vector<Range>> listOfMaps;                                                       // List of Maps
 

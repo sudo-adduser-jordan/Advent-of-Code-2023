@@ -26,7 +26,7 @@ namespace CodeGenerator
 			}
 		}
 
-		Utilities::WriteAllLinesToFile("PuzzleSolvers.h", lines);
+		Utilities::string_vector_vector_to_file("PuzzleSolvers.h", lines);
 	}
 
 	void GeneratePuzzleSolvers()
@@ -71,7 +71,7 @@ namespace CodeGenerator
 				lines[14] = line22New;
 				lines[16] = line17New;
 
-				Utilities::WriteAllLinesToFile(output_file, lines);
+				Utilities::string_vector_vector_to_file(output_file, lines);
 				// std::cout << "File created.\n";
 			}
 		}
@@ -85,13 +85,13 @@ namespace CodeGenerator
 			{
 				auto builder = std::stringstream{};
 				builder << "Puzzle" << std::setfill('0') << std::setw(2) << i << ".input";
-				Utilities::WriteAllLinesToFile(builder.str(), lines);
+				Utilities::string_vector_vector_to_file(builder.str(), lines);
 			}
 
 			{
 				auto builder = std::stringstream{};
 				builder << "Puzzle" << std::setfill('0') << std::setw(2) << i << "SampleA.input";
-				Utilities::WriteAllLinesToFile(builder.str(), lines);
+				Utilities::string_vector_vector_to_file(builder.str(), lines);
 			}
 		}
 	}
@@ -106,7 +106,7 @@ namespace CodeGenerator
 				char part = (j == 0 ? 'A' : 'B');
 				auto builder = std::stringstream{};
 				builder << "Puzzle" << std::setfill('0') << std::setw(2) << i << part << ".md";
-				Utilities::WriteAllLinesToFile(builder.str(), lines);
+				Utilities::string_vector_vector_to_file(builder.str(), lines);
 			}
 		}
 	}

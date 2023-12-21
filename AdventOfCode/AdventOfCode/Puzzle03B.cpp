@@ -44,7 +44,7 @@ namespace Puzzle03B
 
 	void PrintSolution(const std::filesystem::path& inputFile, bool shouldRender)
 	{
-		auto input = ReadAllLinesInFile(inputFile);
+		auto input = file_into_string_vector(inputFile);
 
 		std::vector<PartNumber*> partNumbers;
 		std::vector<SymbolPosition*> symbolPositions;

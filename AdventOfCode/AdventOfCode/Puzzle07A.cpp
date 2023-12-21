@@ -113,7 +113,7 @@ namespace Puzzle07A
 
 	void PrintSolution(const std::filesystem::path& inputFile, bool shouldRender)
 	{
-		auto input = ReadAllLinesInFile(inputFile);
+		auto input = file_into_string_vector(inputFile);
 
 		std::list<Hand> listOfHands;
 		std::list<Hand> fiveKind;
@@ -126,11 +126,11 @@ namespace Puzzle07A
 
 		for (const auto& line : input)
 		{
-			const auto vector = SplitString(line, " ");
+			const auto vector = string_split(line, ' ');
 			Hand hand;
 			hand.type = SetType(vector.at(0));            // set type of hand
 			hand.cards = ConvertCharacters(vector.at(0)); // set cards to int value
-			hand.bid = stoi(vector.at(1));                // set bid
+			hand.bid = std::stoi(vector.at(1));                // set bid
 
 			if (hand.type == types.fiveKind) // switch type
 			{

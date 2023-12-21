@@ -5,7 +5,6 @@
 
 namespace Utilities
 {
-
 	std::vector<std::string> file_into_string_vector(const std::filesystem::path& path)
 	{
 		std::string line;
@@ -29,6 +28,27 @@ namespace Utilities
 			grid.push_back(string_to_int_vector(line));
 		}
 		return grid;
+	}
+
+	bool string_vector_vector_to_file(const std::filesystem::path& path, const std::vector<std::string>& lines)
+	{
+		auto fileStream = std::ofstream{ path };
+		if (!fileStream.good())
+		{
+			return false;
+		}
+
+		for (auto i = 0; i < lines.size(); ++i)
+		{
+			if (i != 0)
+			{
+				fileStream << '\n';
+			}
+
+			fileStream << lines[i];
+		}
+
+		return fileStream.good();
 	}
 
 } // namespace Utilities
