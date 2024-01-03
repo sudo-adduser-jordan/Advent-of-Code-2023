@@ -128,6 +128,10 @@ namespace Solutions10A
 
 		Point firstConnection = findFirstConnection(pipes, startPoint, rows, columns);
 		result = findDistance(pipes, firstConnection, startPoint, 1, rows, columns);
-		std::cout << GREEN_TEXT << result * 0.5 << RESET_COLOR << std::endl;
+		std::cout << GREEN_TEXT
+				  << "\t\t"
+				  << result * 0.5
+				  << RESET_COLOR
+				  << std::endl;
 	}
 } // namespace Solutions10A

@@ -44,5 +44,5 @@ g++ $VERSION \
 # Execute Binary
 # cd ./build/debug/
 # ./build/debug/AdventOfCode.exe
-./build/debug/AdventOfCode.exe --solution05
+./build/debug/AdventOfCode.exe --solution10
 # ./build/debug/AdventOfCode.exe --solution01 --sample

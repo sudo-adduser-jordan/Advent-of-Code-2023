@@ -44,6 +44,6 @@ namespace Solutions09A
 		{
 			result += prediction;
 		}
-		std::cout << GREEN_TEXT << result << RESET_COLOR << std::endl;
+		std::cout << GREEN_TEXT << "\t\t" << result << RESET_COLOR << std::endl;
 	}
 } // namespace Solutions09A

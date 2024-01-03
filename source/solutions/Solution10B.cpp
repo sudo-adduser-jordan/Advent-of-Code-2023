@@ -130,6 +130,11 @@ namespace Solutions10B
 		// https://en.wikipedia.org/wiki/Pick's_theorem
 
 		int result = (int)(abs(area) / 2 + 1 - (pv.size() - 1) / 2);
-		std::cout << GREEN_TEXT << result << RESET_COLOR << std::endl;
+		std::cout << GREEN_TEXT
+				  << "\t\t"
+				  << result
+				  << RESET_COLOR
+				  << std::endl
+				  << std::endl;
 	}
 } // namespace Solutions10B
