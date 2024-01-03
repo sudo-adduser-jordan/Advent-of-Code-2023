@@ -132,6 +132,7 @@ namespace Solutions10A
 				  << "\t\t"
 				  << result * 0.5
 				  << RESET_COLOR
+				  << std::endl
 				  << std::endl;
 	}
 } // namespace Solutions10A
