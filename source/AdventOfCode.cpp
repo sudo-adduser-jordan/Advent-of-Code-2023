@@ -344,7 +344,7 @@ void ExecuteSolutions(Arguments arguments)
         std::cout << "\t\tSolution executed in: "
                   << YELLOW_TEXT
                   << duration.count()
-                  << " us"
+                  << " ns"
                   << RESET_COLOR
                   << std::endl
                   << std::endl;
