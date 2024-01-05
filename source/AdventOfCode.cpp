@@ -357,7 +357,7 @@ int main(int argc, char *argv[])
 {
 
   {
-    CodeGenerator::GenerateMarkDownFiles();
+    // CodeGenerator::GenerateMarkDownFiles();
     // CodeGenerator::GenerateHeaders();
     // CodeGenerator::GenerateSolutions();
     // CodeGenerator::GenerateInputFiles();

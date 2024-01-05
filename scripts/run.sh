@@ -1,48 +1,41 @@
 #!/bin/bash
 
-# g++ --help -v 2>/dev/null|grep std=
+cd ..
+PROJECT_DIRECTORY=$(pwd)
 VERSION="-std=c++23"
+SOLUTION=11
 
-# MAKE DIRECTORY
-cd ..
-mkdir build
-mkdir build/debug
+mkdir $PROJECT_DIRECTORY/build/
+mkdir $PROJECT_DIRECTORY/build/debug/
 
-# COMPILE UTILITES INTO LIB
 # echo "Compiling Utilites..."
-# cd packages/utilities/
-# g++ $VERSION -c *.cpp 
-# ar rvs utilities.a *.o
-# mv *.o *.a ../../build/debug/
-# cd .. 
-# cd ..
+# cd $PROJECT_DIRECTORY/packages/utilities/ 
+# g++ $VERSION \
+#     -c *.cpp \
 
-# COMPILE STRUCTURES INTO LIB
+# echo "Compiling Solutions..."
+# cd $PROJECT_DIRECTORY/source/solutions/ 
+# g++ $VERSION \
+#     -c *.cpp \
 
-# COMPILE SOLUTIONS
-echo "Compiling Solutions..."
-cd ./source/solutions
-g++ $VERSION -c *.cpp
-mv *.o ../../build/debug/
-cd ..
-cd ..
+# echo "Compiling Source..."
+# cd $PROJECT_DIRECTORY/source/ 
+# g++ $VERSION \
+#     -c *.cpp \
 
-# COMPILE SOURCE
-echo "Compiling Source..."
-cd ./source
-g++ $VERSION -c *.cpp
-mv *.o ../build/debug/
-cp *.txt ../build/debug/
-cd ..
+# echo "Compiling Solution..."
+# cd $PROJECT_DIRECTORY/source/solutions/
+# g++ $VERSION \
+#     -c Solution${SOLUTION}A.cpp Solution${SOLUTION}B.cpp \
 
-# LINK AND COMPILE BINARY
+mv $PROJECT_DIRECTORY/source/*.o $PROJECT_DIRECTORY/build/debug/
+mv $PROJECT_DIRECTORY/source/solutions/*.o $PROJECT_DIRECTORY/build/debug/
+mv $PROJECT_DIRECTORY/packages/utilities/*.o $PROJECT_DIRECTORY/build/debug/
+
 g++ $VERSION \
-        ./build/debug/*.o \
-        ./build/debug/utilities.a \
-    -o ./build/debug/AdventOfCode.exe  
+        $PROJECT_DIRECTORY/build/debug/*.o \
+        -o $PROJECT_DIRECTORY/build/debug/AdventOfCode.exe  
 
-# Execute Binary
-# cd ./build/debug/
 # ./build/debug/AdventOfCode.exe
-./build/debug/AdventOfCode.exe --solution10
+$PROJECT_DIRECTORY/build/debug/AdventOfCode.exe --solution${SOLUTION} --sample
 # ./build/debug/AdventOfCode.exe --solution01 --sample
