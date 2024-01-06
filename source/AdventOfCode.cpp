@@ -244,11 +244,11 @@ Arguments ReadArgs(int argc, char *argv[])
         {
           arguments.input = true;
         }
-        else if (arg == "--partA")
+        else if (arg == "--parta")
         {
           arguments.parta = true;
         }
-        else if (arg == "--partB")
+        else if (arg == "--partb")
         {
           arguments.partb = true;
         }
@@ -318,13 +318,14 @@ void ExecuteSolutions(Arguments arguments)
 
       std::vector<std::string> inputPaths;
       std::string directory = std::filesystem::current_path().string();
+      // std::cout << RED_TEXT << directory << RESET_COLOR << std::endl;
       if (arguments.sample)
       {
-        inputPaths.push_back(directory + "/source/samples/" + SAMPLE_PATHS[day - 1].string());
+        inputPaths.push_back(directory + "/samples/" + SAMPLE_PATHS[day - 1].string());
       }
       if (arguments.input)
       {
-        inputPaths.push_back(directory + "/source/inputs/" + INPUT_PATHS[day - 1].string());
+        inputPaths.push_back(directory + "/inputs/" + INPUT_PATHS[day - 1].string());
       }
       for (const auto &path : inputPaths)
       {
