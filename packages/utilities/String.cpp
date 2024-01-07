@@ -5,7 +5,7 @@
 namespace Utilities
 {
 
-	std::vector<int> string_to_int_vector(const std::string& str)
+	std::vector<int> string_to_int_vector(const std::string &str)
 	{
 		int number;
 		std::vector<int> ints;
@@ -17,7 +17,7 @@ namespace Utilities
 		return ints;
 	}
 
-	std::vector<unsigned long long int> string_to_long_long_vector(const std::string& str)
+	std::vector<unsigned long long int> string_to_long_long_vector(const std::string &str)
 	{
 		std::vector<unsigned long long int> ints;
 
@@ -31,7 +31,7 @@ namespace Utilities
 		return ints;
 	}
 
-	bool isFound(const std::string& match, const std::string& str)
+	bool isFound(const std::string &match, const std::string &str)
 	{
 		if (str.find(match) < str.length())
 		{
@@ -64,6 +64,10 @@ namespace Utilities
 		}
 
 		return output;
+	}
+
+	void parse_string_into_int_vector()
+	{
 	}
 
 } // namespace Utilities
