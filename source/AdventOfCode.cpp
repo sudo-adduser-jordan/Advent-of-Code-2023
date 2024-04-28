@@ -321,11 +321,13 @@ void ExecuteSolutions(Arguments arguments)
       // std::cout << RED_TEXT << directory << RESET_COLOR << std::endl;
       if (arguments.sample)
       {
-        inputPaths.push_back(directory + "/samples/" + SAMPLE_PATHS[day - 1].string());
+        // inputPaths.push_back(directory + "/samples/" + SAMPLE_PATHS[day - 1].string());
+        inputPaths.push_back(directory + "/source/samples/" + SAMPLE_PATHS[day - 1].string());
       }
       if (arguments.input)
       {
-        inputPaths.push_back(directory + "/inputs/" + INPUT_PATHS[day - 1].string());
+        // inputPaths.push_back(directory + "/inputs/" + INPUT_PATHS[day - 1].string());
+        inputPaths.push_back(directory + "/source/inputs/" + INPUT_PATHS[day - 1].string());
       }
       for (const auto &path : inputPaths)
       {
@@ -368,6 +370,6 @@ int main(int argc, char *argv[])
     PrintTitle();                               // Print Title.
     Arguments arguments = ReadArgs(argc, argv); // Get Arguments.
     PrintArguments(arguments);                  // Print Arguments.
-    ExecuteSolutions(arguments);                // Execute Solutions.}
+    ExecuteSolutions(arguments);                // Execute Solutions.
   }
 }
